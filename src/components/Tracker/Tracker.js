@@ -101,11 +101,11 @@ class Tracker extends Component {
         return(
             <div className="trackerBlock">
                 <div className="welcome">
-                    <span>Hi, {currentUser.displayName}!</span>
-                    <button className="exit" onClick={this.logout}>Exit</button>
+                    <span><h1>Hello, {currentUser.displayName}!</h1></span>
                 </div>
-                <div className="totalMoney">${this.state.money}</div>
-
+                <div className="balanceBox">
+                    <div className="totalMoney">Available Balance: ${this.state.money}</div>
+                </div>
                 <div className="newTransactionBlock">
                     <div className="newTransaction">
                         <form>
@@ -150,6 +150,9 @@ class Tracker extends Component {
                             ))
                         }
                     </ul>
+                </div>
+                <div className="logoutSection">
+                <button className="exit" onClick={this.logout}>Logout</button>
                 </div>
             </div>
         );

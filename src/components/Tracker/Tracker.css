@@ -13,7 +13,7 @@
 .welcome {
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     text-shadow: 0px 5px 3px #292929;
 }
@@ -133,4 +133,15 @@ ul li:last-child{
 
 .exit:hover {
     background-color: #f1f1f1;
+}
+
+.balanceBox {
+    display: flex;
+    justify-content: center;
+}
+
+.logoutSection {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
